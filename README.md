@@ -1,373 +1,531 @@
-# ⚡ DSA Journey
+# ⚡ DSA × JAVA
+
+### `Think → Code → Break → Optimize → Repeat`
+
+> **A structured journey through Data Structures & Algorithms — built in Java, one problem at a time.**
 
 <p align="center">
-  <strong>Learning. Solving. Understanding. Repeating.</strong>
-</p>
-
-<p align="center">
-  A structured journey through <b>Data Structures & Algorithms</b> using Java, LeetCode, and hands-on problem solving.
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Language-Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Platform-LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Focus-DSA-6C63FF?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Status-Learning-00C853?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Language-Java-orange?style=for-the-badge&logo=openjdk&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Focus-DSA-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Problems-Solving-success?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Status-🟢%20Active-brightgreen?style=for-the-badge"/>
 </p>
 
 ---
 
-## 🧠 Why This Repository?
+## 🧠 What is this?
 
-This isn't just a collection of copied solutions.
+This repository is my **DSA laboratory in Java**.
 
-The goal is to develop the ability to look at a problem and think:
+Not just a collection of solutions.
+
+Every problem follows the same cycle:
 
 ```text
-                 PROBLEM
-                    │
-                    ▼
-             Understand it
-                    │
-                    ▼
-             Find the pattern
-                    │
-                    ▼
-             Build an approach
-                    │
-                    ▼
-          ┌─────────┴─────────┐
-          ▼                   ▼
-      Brute Force          Optimization
-          │                   │
-          └─────────┬─────────┘
-                    ▼
-                Code it
-                    │
-                    ▼
-              Test & Analyze
-                    │
-                    ▼
-             Learn the pattern
+              ┌───────────────┐
+              │   Understand  │
+              └───────┬───────┘
+                      ↓
+              ┌───────────────┐
+              │    Approach   │
+              └───────┬───────┘
+                      ↓
+              ┌───────────────┐
+              │     Code      │
+              └───────┬───────┘
+                      ↓
+              ┌───────────────┐
+              │    Analyze    │
+              │  Time/Space   │
+              └───────┬───────┘
+                      ↓
+              ┌───────────────┐
+              │   Optimize    │
+              └───────┬───────┘
+                      ↓
+                   🚀 NEXT
 ```
 
-> **The objective is not to memorize solutions — it's to recognize patterns.**
+The goal isn't to memorize solutions.
+
+**The goal is to build problem-solving instincts.**
 
 ---
 
-# 🗺️ DSA Roadmap
+# 🗺️ DSA ROADMAP
 
 ```text
-                         DSA
-                          │
-        ┌─────────────────┼─────────────────┐
-        │                 │                 │
-      Basics           Data Structures    Algorithms
-        │                 │                 │
-   ┌────┴────┐       ┌────┴────┐      ┌────┴────┐
-   │         │       │         │      │         │
- Arrays   Strings   Linear    Non-   Searching Sorting
-                     │       Linear
-                     │         │
-                ┌────┴───┐ ┌───┴────┐
-                │        │ │        │
-              Stack    Queue Trees  Graphs
-                       │
-                    Hashing
-                       │
-                  HashMap/Set
+                    🧩 DSA
+                      │
+        ┌─────────────┼─────────────┐
+        ↓             ↓             ↓
+     LINEAR        NON-LINEAR    ALGORITHMS
+        │             │             │
+   ┌────┼────┐    ┌───┼────┐    ┌───┼────┐
+   ↓    ↓    ↓    ↓   ↓    ↓    ↓   ↓    ↓
+ Array Linked Stack Tree Graph Sort Search DP
+       List  Queue
 ```
-
----
-
-# 📚 Topics
 
 ### 🟢 Foundations
 
-* [ ] Big-O Notation
+* [ ] Java Basics
+* [ ] Input / Output
+* [ ] Functions
+* [ ] Recursion
+* [ ] Complexity Analysis
+* [ ] Bit Manipulation
+
+### 🔵 Linear Data Structures
+
 * [ ] Arrays
 * [ ] Strings
-* [ ] Recursion
-* [ ] Searching
-* [ ] Sorting
-
-### 🔵 Data Structures
-
 * [ ] Linked List
 * [ ] Stack
 * [ ] Queue
 * [ ] Deque
 * [ ] Hashing
-* [ ] HashMap
-* [ ] HashSet
+
+### 🟣 Non-Linear Data Structures
+
 * [ ] Trees
-* [ ] Binary Search Tree
+* [ ] Binary Tree
+* [ ] BST
+* [ ] AVL Tree
 * [ ] Heap
+* [ ] Priority Queue
 * [ ] Trie
 * [ ] Graph
+* [ ] Disjoint Set Union
 
-### 🟣 Algorithms
+### 🟠 Algorithms
 
-* [ ] Binary Search
+* [ ] Searching
+* [ ] Sorting
 * [ ] Two Pointers
 * [ ] Sliding Window
 * [ ] Prefix Sum
-* [ ] Divide & Conquer
-* [ ] Greedy
+* [ ] Recursion
 * [ ] Backtracking
+* [ ] Greedy
+* [ ] Divide & Conquer
 * [ ] Dynamic Programming
+
+### 🔴 Advanced
+
 * [ ] Graph Algorithms
+* [ ] Shortest Path
+* [ ] Minimum Spanning Tree
+* [ ] Topological Sorting
+* [ ] Advanced DP
+* [ ] Segment Tree
+* [ ] Fenwick Tree
 
 ---
 
-# 🔥 Problem-Solving Patterns
-
-The most important skill I'm building is **pattern recognition**.
-
-| Pattern                | What to Look For                |
-| ---------------------- | ------------------------------- |
-| 🔑 HashMap / HashSet   | Fast lookup / frequency         |
-| 👥 Two Pointers        | Sorted arrays / pairs           |
-| 🪟 Sliding Window      | Contiguous subarray / substring |
-| ➕ Prefix Sum           | Repeated range-sum calculations |
-| 🔍 Binary Search       | Sorted / monotonic search space |
-| 📚 Stack               | Previous/next greater, matching |
-| 🌳 DFS / BFS           | Trees and graphs                |
-| 🏔️ Heap               | Top K / priority problems       |
-| 🔄 Backtracking        | All possible combinations       |
-| 🧠 Dynamic Programming | Overlapping subproblems         |
-
----
-
-# 🧩 LeetCode Progress
-
-### Current Focus → Hashing
-
-|   # | Problem                                        | Pattern              | Status |
-| --: | ---------------------------------------------- | -------------------- | :----: |
-| 217 | Contains Duplicate                             | HashSet              |    ✅   |
-| 242 | Valid Anagram                                  | Frequency            |    ✅   |
-| 349 | Intersection of Two Arrays                     | HashSet              |    ✅   |
-| 350 | Intersection of Two Arrays II                  | HashMap              |   🔄   |
-|   1 | Two Sum                                        | HashMap              |    ⏳   |
-|  49 | Group Anagrams                                 | HashMap              |    ⏳   |
-| 219 | Contains Duplicate II                          | HashMap              |    ⏳   |
-| 347 | Top K Frequent Elements                        | Frequency + Heap     |    ⏳   |
-|   3 | Longest Substring Without Repeating Characters | Sliding Window       |    ⏳   |
-| 560 | Subarray Sum Equals K                          | Prefix Sum + HashMap |    ⏳   |
-
-> Progress is updated as concepts and problems are completed.
-
----
-
-# 🧠 My Problem-Solving Framework
-
-For every problem:
-
-### 01 — Understand
-
-What exactly is being asked?
-
-### 02 — Observe
-
-Look for constraints, patterns, and edge cases.
-
-### 03 — Brute Force
-
-Find the simplest correct solution first.
-
-### 04 — Optimize
-
-Ask:
-
-> Can a better data structure or algorithm reduce the complexity?
-
-### 05 — Implement
-
-Write clean and readable Java.
-
-### 06 — Analyze
+# 📂 Repository Architecture
 
 ```text
-Time Complexity → ?
-Space Complexity → ?
-```
-
-### 07 — Reflect
-
-What pattern did this problem teach?
-
----
-
-# 📊 Complexity Cheat Sheet
-
-| Operation             |    Average |      Worst |
-| --------------------- | ---------: | ---------: |
-| Array Access          |       O(1) |       O(1) |
-| Array Search          |       O(n) |       O(n) |
-| HashMap Lookup        |       O(1) |       O(n) |
-| HashSet Lookup        |       O(1) |       O(n) |
-| Stack Push/Pop        |       O(1) |       O(1) |
-| Queue Enqueue/Dequeue |       O(1) |       O(1) |
-| Binary Search         |   O(log n) |   O(log n) |
-| Merge Sort            | O(n log n) | O(n log n) |
-| Heap Insert           |   O(log n) |   O(log n) |
-| Heap Delete           |   O(log n) |   O(log n) |
-
----
-
-# 🏗️ Repository Structure
-
-```text
-DSA/
+DSA-JAVA/
 │
-├── 📁 01-Arrays
-│   ├── Basics
-│   ├── Searching
-│   ├── Sorting
-│   └── LeetCode
+├── 📁 01-Arrays/
+│   ├── TwoSum.java
+│   ├── KadaneAlgorithm.java
+│   └── RotateArray.java
 │
-├── 📁 02-Strings
-│   ├── Basics
-│   └── LeetCode
+├── 📁 02-Strings/
+│   ├── Palindrome.java
+│   ├── Anagram.java
+│   └── LongestSubstring.java
 │
-├── 📁 03-LinkedList
-│   ├── Singly
-│   ├── Doubly
-│   └── LeetCode
+├── 📁 03-LinkedList/
+│   ├── SinglyLinkedList.java
+│   ├── DoublyLinkedList.java
+│   └── ReverseLinkedList.java
 │
-├── 📁 04-Stack
+├── 📁 04-Stack/
 │
-├── 📁 05-Queue
+├── 📁 05-Queue/
 │
-├── 📁 06-Hashing
-│   ├── HashSet
-│   ├── HashMap
-│   ├── Collision
-│   ├── Frequency
-│   └── LeetCode
+├── 📁 06-Hashing/
 │
-├── 📁 07-Recursion
+├── 📁 07-Trees/
+│   ├── BinaryTree/
+│   ├── BST/
+│   └── AVL/
 │
-├── 📁 08-Trees
+├── 📁 08-Heap/
 │
-├── 📁 09-Heap
+├── 📁 09-Graph/
 │
-├── 📁 10-Graphs
+├── 📁 10-Sorting/
 │
-├── 📁 11-Greedy
+├── 📁 11-Searching/
 │
-├── 📁 12-Backtracking
+├── 📁 12-Recursion/
 │
-└── 📁 13-DynamicProgramming
+├── 📁 13-Backtracking/
+│
+├── 📁 14-Greedy/
+│
+├── 📁 15-DynamicProgramming/
+│
+└── 📄 README.md
 ```
 
 ---
 
-# 🧪 Learning Method
+# ⚙️ How I Analyze Every Problem
 
-Every important problem is approached through:
+Each solution follows a consistent template:
 
-```text
-📌 Problem
-   ↓
-💡 Hint
-   ↓
-🧠 Thought Process
-   ↓
-📝 Approach
-   ↓
-💻 Implementation
-   ↓
-🔍 Dry Run
-   ↓
-⏱️ Complexity
-   ↓
-🎯 Pattern Learned
+```java
+/*
+    Problem:
+    --------------------------------
+    <Problem statement>
+
+    Approach:
+    --------------------------------
+    <Logic>
+
+    Time Complexity:
+    O(...)
+
+    Space Complexity:
+    O(...)
+*/
 ```
 
-This makes the repository useful not only for **solving problems**, but also for reviewing concepts later.
+### Example
+
+```java
+public int maxSubArray(int[] nums) {
+
+    int current = nums[0];
+    int maximum = nums[0];
+
+    for (int i = 1; i < nums.length; i++) {
+
+        current = Math.max(nums[i], current + nums[i]);
+
+        maximum = Math.max(maximum, current);
+    }
+
+    return maximum;
+}
+```
+
+**Pattern discovered:** Kadane's Algorithm
+
+```text
+Problem
+   ↓
+Observe
+   ↓
+Find Pattern
+   ↓
+Implement
+   ↓
+Optimize
+```
 
 ---
 
-# 🎯 Goals
+# 🧩 PATTERN LIBRARY
+
+Instead of remembering hundreds of problems, I focus on recognizing patterns.
+
+| Pattern                | Typical Problems        |
+| ---------------------- | ----------------------- |
+| 🔹 Two Pointers        | Pair Sum, Palindrome    |
+| 🔹 Sliding Window      | Subarray / Substring    |
+| 🔹 Hashing             | Frequency / Lookup      |
+| 🔹 Binary Search       | Sorted Search Space     |
+| 🔹 Fast & Slow Pointer | Linked List             |
+| 🔹 Monotonic Stack     | Next Greater Element    |
+| 🔹 BFS                 | Level Traversal         |
+| 🔹 DFS                 | Graph / Tree Traversal  |
+| 🔹 Backtracking        | Permutations / N-Queens |
+| 🔹 Greedy              | Local Optimal Choices   |
+| 🔹 Dynamic Programming | Overlapping Subproblems |
+| 🔹 Divide & Conquer    | Merge Sort              |
+| 🔹 Union Find          | Connected Components    |
+
+> **The real skill isn't solving Problem #347.
+> It's recognizing that Problem #347 is another version of a pattern you've already learned.**
+
+---
+
+# 📊 COMPLEXITY CHEAT SHEET
+
+| Data Structure / Algorithm |      Average |        Worst |
+| -------------------------- | -----------: | -----------: |
+| Array Access               |       `O(1)` |       `O(1)` |
+| Array Search               |       `O(n)` |       `O(n)` |
+| Binary Search              |   `O(log n)` |   `O(log n)` |
+| HashMap Search             |       `O(1)` |       `O(n)` |
+| Stack Push                 |       `O(1)` |       `O(1)` |
+| Queue Enqueue              |       `O(1)` |       `O(1)` |
+| BST Search                 |   `O(log n)` |       `O(n)` |
+| Heap Insert                |   `O(log n)` |   `O(log n)` |
+| Merge Sort                 | `O(n log n)` | `O(n log n)` |
+| Quick Sort                 | `O(n log n)` |      `O(n²)` |
+
+---
+
+# ☕ JAVA TOOLKIT
+
+This repository also focuses on becoming comfortable with Java's built-in DSA tools.
+
+### Collections
+
+```java
+ArrayList
+LinkedList
+HashMap
+HashSet
+TreeMap
+TreeSet
+Stack
+Queue
+Deque
+PriorityQueue
+```
+
+### Useful Concepts
 
 ```text
-☐ Build strong DSA fundamentals
-☐ Master common problem-solving patterns
-☐ Solve 150+ LeetCode problems
-☐ Understand time & space complexity
-☐ Improve independent problem solving
-☐ Prepare for technical interviews
-☐ Write clean and optimized Java
-☐ Move from Easy → Medium → Hard
+Comparable
+Comparator
+Generics
+Iterators
+Lambda Expressions
+Streams
+Custom Classes
+Custom Data Structures
 ```
 
 ---
 
-# 📈 Progress
+# 🎯 PROBLEM-SOLVING WORKFLOW
+
+When I face a new problem:
 
 ```text
-Easy       ███████░░░  70%
-Medium     ███░░░░░░░  30%
-Hard       █░░░░░░░░░  10%
+             READ
+               ↓
+        What is given?
+               ↓
+        What is required?
+               ↓
+       ┌───────────────┐
+       │ Find Pattern  │
+       └───────┬───────┘
+               ↓
+        Brute Force
+               ↓
+        Optimize Logic
+               ↓
+       Time Complexity
+               ↓
+       Space Complexity
+               ↓
+            CODE
+               ↓
+            TEST
+               ↓
+           OPTIMIZE
 ```
-
-> Progress bars are updated as the journey continues.
 
 ---
 
-# 💻 Tech Stack
+# 🏆 PROGRESS TRACKER
+
+### Data Structures
+
+```text
+Arrays          ██████████░░  80%
+Strings         ████████░░░░  65%
+Linked List     ███████░░░░░  60%
+Stack           ██████░░░░░░  50%
+Queue           █████░░░░░░░  45%
+Hashing         ███████░░░░░  60%
+Trees           █████░░░░░░░  45%
+Graphs          ███░░░░░░░░░  25%
+```
+
+### Algorithms
+
+```text
+Searching       ████████░░░░
+Sorting         ███████░░░░░
+Recursion       ██████░░░░░░
+Backtracking    ████░░░░░░░░
+Greedy          ████░░░░░░░░
+Dynamic Prog.   ██░░░░░░░░░░
+```
+
+> Progress bars are updated as the repository grows.
+
+---
+
+# 🧪 FROM BRUTE FORCE → OPTIMIZED
+
+One of the main goals of this repository is learning how to improve solutions.
+
+```text
+                 BRUTE FORCE
+                      │
+                      ↓
+                 O(n²)
+                      │
+                 Find Bottleneck
+                      │
+                      ↓
+                Better Approach
+                      │
+                      ↓
+                  O(n log n)
+                      │
+                 Find Pattern
+                      │
+                      ↓
+                OPTIMIZED
+                      │
+                      ↓
+                   O(n)
+```
+
+The important question isn't:
+
+> **"Can I solve this?"**
+
+It's:
+
+> **"Can I solve this with fewer operations and less memory?"**
+
+---
+
+# 💡 WHAT I'M LEARNING
+
+```text
+❌ Memorizing solutions
+
+        ↓
+
+✅ Understanding patterns
+
+        ↓
+
+❌ Writing code that works
+
+        ↓
+
+✅ Writing efficient code
+
+        ↓
+
+❌ Solving one problem
+
+        ↓
+
+✅ Recognizing 20 problems as one pattern
+```
+
+---
+
+# 🚀 GOALS
+
+* [ ] Build strong DSA fundamentals
+* [ ] Master Java Collections
+* [ ] Recognize common problem patterns
+* [ ] Improve time & space complexity
+* [ ] Solve medium-level problems confidently
+* [ ] Tackle hard problems systematically
+* [ ] Build custom data structures from scratch
+* [ ] Prepare for technical interviews
+* [ ] Become a better problem solver
+
+---
+
+# 🧠 THE GOLDEN RULE
+
+```text
+                 ┌──────────────────────┐
+                 │      DON'T           │
+                 │   MEMORIZE CODE      │
+                 └──────────┬───────────┘
+                            ↓
+                 ┌──────────────────────┐
+                 │    UNDERSTAND WHY    │
+                 └──────────┬───────────┘
+                            ↓
+                 ┌──────────────────────┐
+                 │   RECOGNIZE PATTERN  │
+                 └──────────┬───────────┘
+                            ↓
+                 ┌──────────────────────┐
+                 │    WRITE YOUR OWN    │
+                 │        SOLUTION      │
+                 └──────────┬───────────┘
+                            ↓
+                         🚀 GROW
+```
+
+---
+
+# 🛠️ Tech Stack
 
 <p align="center">
 
-<img src="https://skillicons.dev/icons?i=java,git,github,vscode" />
+<img src="https://img.shields.io/badge/Java-17+-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/DSA-Algorithms-blue?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/Git-Version%20Control-F05032?style=for-the-badge&logo=git&logoColor=white"/>
 
 </p>
 
 ---
 
-# 🏆 Milestones
+# 🌱 Repository Philosophy
 
-| Milestone             | Status |
-| --------------------- | :----: |
-| Learn Big-O           |    ⏳   |
-| Complete Arrays       |    ⏳   |
-| Master Hashing        |   🔄   |
-| Master Linked Lists   |    ⏳   |
-| Master Trees          |    ⏳   |
-| Master Graphs         |    ⏳   |
-| Complete 50 LeetCode  |    ⏳   |
-| Complete 100 LeetCode |    ⏳   |
-| Complete 150 LeetCode |    ⏳   |
-| First Hard Problem    |    ⏳   |
+> **Code is the implementation.
+> The real product is the thinking behind it.**
 
----
+Every problem added here should answer three questions:
 
-# 💭 Philosophy
+```text
+1️⃣ Why does this solution work?
 
-> ### "Don't ask: *How do I solve this problem?*"
->
-> ### Ask: *What pattern does this problem belong to?*
+2️⃣ Why is it efficient?
 
-Every solved problem should make the **next similar problem easier**.
+3️⃣ Can the same idea solve another problem?
+```
+
+If the answer to all three is **yes**, the problem is truly learned.
 
 ---
 
-# 📌 Resources
+# ⭐ If You Find This Useful
 
-* [LeetCode](https://leetcode.com/)
-* [Java Documentation](https://docs.oracle.com/en/java/)
-* [Visualgo](https://visualgo.net/)
+Feel free to:
+
+```text
+⭐ Star
+🍴 Fork
+💡 Suggest improvements
+🐛 Report issues
+🤝 Contribute
+```
 
 ---
 
-<p align="center">
+<div align="center">
 
 ### ⚡ One Problem. One Pattern. One Step Forward.
 
-**Keep Learning • Keep Solving • Keep Improving**
+**`Think Better → Code Better → Solve Better`**
 
-⭐ Star this repository if you find it useful.
-
-</p>
+</div>
