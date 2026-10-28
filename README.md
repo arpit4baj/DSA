@@ -535,6 +535,7 @@ Feel free to:
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0011-container-with-most-water](https://github.com/arpit4baj/DSA/tree/main/0011-container-with-most-water/) | Medium |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/arpit4baj/DSA/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0238-product-of-array-except-self](https://github.com/arpit4baj/DSA/tree/main/0238-product-of-array-except-self/) | Medium |
 ## Dynamic Programming
@@ -545,4 +546,12 @@ Feel free to:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0238-product-of-array-except-self](https://github.com/arpit4baj/DSA/tree/main/0238-product-of-array-except-self/) | Medium |
+## Two Pointers
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0011-container-with-most-water](https://github.com/arpit4baj/DSA/tree/main/0011-container-with-most-water/) | Medium |
+## Greedy
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0011-container-with-most-water](https://github.com/arpit4baj/DSA/tree/main/0011-container-with-most-water/) | Medium |
 <!---LeetCode Topics End-->
